@@ -96,6 +96,7 @@ function App() {
     if (token && username) {
       fetchMyBooking();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token, username]);
 
   const fetchMyBooking = async () => {
